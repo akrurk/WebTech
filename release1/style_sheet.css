@@ -1,0 +1,25 @@
+/*Navigation Bar Styling*/
+    .Nav_Bar {top: 0px; text-align: center; width: 100%;}
+    .Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color: rgb(50, 50, 50); border-radius: 5px; text-align: center; display: inline-block;}
+    .Nav_Bar li {float: left;}
+    .Nav_Bar li a {display: inline-block; color: white; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+    .Nav_Bar a.Active {background-color:rgb(50, 50, 50);}
+    .Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:lightsteelblue;}
+    .Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: rgb(50, 50, 50); min-width: 100px; z-index: 1; }
+    .Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+    .Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+
+/*Background*/
+body{background-image: url(https://image.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: 100%;}
+
+/*Imported Font*/
+@font-face {
+        font-family: header;
+        src: url(header.ttf);}
+
+/*Class & Ids*/
+.footer{font-size: 10pt;text-align: center;}
+header{font-family: header; text-align: center;font-size: 25pt;}
+h1{text-align: center; font-family: header;}
+.info{padding-left: 50px; padding-right: 50px; text-align: justify;font-size: 14pt;}
+.infoblock{background-image: linear-gradient(180deg, steelblue, lightsteelblue); margin-right: 50px; margin-left: 50px;}

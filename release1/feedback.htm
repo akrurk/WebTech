@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style_sheet.css" type="text/css" />
+    <style>
+
+
+        .button {background-color: lightsteelblue; border: none; color: white; padding: 16px 32px; text-align: center; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer;}
+
+  .button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid lightsteelblue;
+}
+
+.button1:hover {
+  background-color:steelblue;
+  color: white;}
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="Nav_Bar" >
+        <ul style="font-size: 15pt;">
+            <li>
+                <a href="index.htm" class="Active">Home</a>
+            </li>
+            <li>
+                <a href="#anchor1" class="Active">Basic Information</a>
+            </li>
+            <li>
+                <a href="#anchor2" class="Active">City Site</a>
+            </li>
+            <li>
+                <a href="#anchor3" class="Active">Climate</a>
+            </li>
+
+            <li class="Dropdown">
+                <a>Tourism</a>
+                <div class="Dropdown_Content">
+                    <a href=#anchor4>Overview</a>
+                    <a href="explore.html">Explore More Content</a>
+                </div>
+            
+            <li class="Dropdown">
+                <a>Search Engines</a>
+                <div class="Dropdown_Content">
+                    <a href="http://www.google.com">Google</a>
+                    <a href="http://www.yahoo.com">Yahoo</a>
+                    <a href="http://www.bing.com">Bing</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<br>
+<header><a href="index.html"><img style="width: 275px;" src="Picture1.png" alt="Mumbai Skyline Animated"></a></header>
+<header>Live Bombay</header>
+<br>
+<div class="infoblock">
+    <br>
+<h1>Feedback Form</h1>	
+	<p style="text-align: center;">Please complete the following feedback form after using our website.</p>
+	
+	<form style="text-align: center;" action="http://wtspring13sec2.babson.edu/gordon/mailer.php" method="post">
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="firstname" maxlength="100"/></td>
+			<td>Last Name</td>
+			<td><input type="text" name="lastname" maxlength="100"/></td>
+		</tr>
+		<p>Email <input type="text" name="Email" maxlength="100"/></p>
+		<p>Rating: Excellent <input type="radio" name="Rating" value="Excellent" />
+			Very Good <input type="radio" name="Rating" value="Very Good"/>
+            Good <input type="radio" name="Rating" value="Good"/>
+            Average <input type="radio" name="Rating" value="Average"/>
+            Bad <input type="radio" name="Rating" value="Bad"/>
+		</p>
+        <p>Please add any comments you have</p><textarea name="comments" rows="5" cols="29"></textarea>
+		
+		<p>
+			<input type="submit" value="Submit" name="Submit" />
+			<input type="reset" value="Reset" name="Reset" />
+		</p>
+        <br>
+	
+	</form>
+    </div>
+    <footer>
+        <p class="footer">I have abided by the Babson Code of Ethics in this work and pledge to be better than that which would compromise my integrity</p>
+        <p class="footer"><b>Website By Akrur Kamal Khetan</b></p>
+      </footer>
+</body>
+</html>
