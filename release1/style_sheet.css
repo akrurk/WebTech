@@ -4,7 +4,7 @@
     .Nav_Bar li {float: left;}
     .Nav_Bar li a {display: inline-block; color: white; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
     .Nav_Bar a.Active {background-color:rgb(50, 50, 50);}
-    .Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:lightsteelblue;}
+    .Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:grey;}
     .Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: rgb(50, 50, 50); min-width: 100px; z-index: 1; }
     .Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
     .Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
