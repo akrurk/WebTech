@@ -24,6 +24,16 @@
 			{
 				alert("One Option Required")
 			}
+			else if (document.getElementById("grad").value=="")
+			{
+				alert("Graduation Year Required")
+				document.getElementById("grad").focus();
+			}
+			else if (document.getElementById("grad").value< 2021 || document.getElementById("grad").value>2024)
+			{
+				alert("Graduation Year Must Be Between 2021 to 2024")
+				document.getElementById("grad").focus();
+			}
 			else
 			{
 				return true;
@@ -81,6 +91,8 @@
 			<input type="submit" value="Submit" name="Submit" />
 			<input type="reset" value="Reset" name="Reset" />
 		</p> 
+
+		<p> Year Of Graduation? <input type="text" name="grad" maxlength="4" id="grad"> </p>
 	
 	</form>
 </body>
