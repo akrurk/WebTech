@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+
+	<script>
+		function processForm()
+		{
+			var jsimages = document.getElementById("images")
+			var jstables = document.getElementById("tables")
+			var jsforms = document.getElementById("forms")
+			var jscss = document.getElementById("css")
+			if (document.getElementById("firstname").value=="")
+			{
+				alert("First Name Required");
+				document.getElementById ("firstname").focus();
+			}
+			else if (document.getElementById("lastname").value=="")
+			{
+				alert("Last Name Required")
+				document.getElementById ("lastname").focus();
+			}
+			else if (jsimages.checked == false && jstables.checked == false && jsforms.checked == false && jscss.checked == false)
+			{
+				alert("One Option Required")
+			}
+			else
+			{
+				return true;
+			}
+			return false;
+		}
+	</script>
+
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+	td {padding-right:40px}
+	</style>
+	
+</head>
+<body>
+	<h1>MIS3690 Student Survey</h1>	
+	<p>Please complete the following survey.  You must answer each question.  When you are done,
+	    please click on the Submit button.</p>
+	
+	<form action="http://wtspring13sec2.babson.edu/gordon/mailer.php" method="post" onsubmit="return processForm()">
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="firstname" maxlength="100" id="firstname"/></td>
+			<td>Last Name</td>
+			<td><input type="text" name="lastname" maxlength="100" id="lastname"/></td>
+		</tr>
+		
+		<p>Gender: Male <input type="radio" name="gender" value="male" />
+			Female <input type="radio" name="gender" value="female"/>
+		</p>
+
+		<p>
+			What grade do you expect?
+			<select name="D1">
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="C">C</option>
+				<option value="D">D</option>
+				<option value="F">F</option>
+			</select>
+		</p>
+		<table>
+		<tr>
+			<td rowspan="4">Which topics did you find to be fun (Select all that apply)</td>
+			<td><input type="checkbox" name="Images" value="Images" id="images" /> Images <br>
+				<input type="checkbox" name="CSS" value="CSS" id="css" /> CSS <br>
+				<input type="checkbox" name="Tables" value="Tables" id="tables" /> Tables <br>
+				<input type="checkbox" name="Forms" value="Forms" id="forms" /> Forms <br>
+			</table>
+
+		<p>Please add any comments you have</p><textarea name="comments" rows="5" cols="29"></textarea>
+		
+		<p>
+			<input type="submit" value="Submit" name="Submit" />
+			<input type="reset" value="Reset" name="Reset" />
+		</p> 
+	
+	</form>
+</body>
+</html>
