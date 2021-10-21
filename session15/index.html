@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           
+    </style>
+    <script>
+        function moveButton()
+        {
+        var posttop = Math.floor(1+Math.random()*501) + "px";
+        var posleft = Math.floor(1+Math.random()*501) + "px";
+        var texttype = new Array("Click Me", "Move Me", "Click Here", "Next", "Button");
+        document.getElementById("move").style.top=posttop
+        document.getElementById("move").style.left=posleft
+        document.getElementById("test").innerHTML = text[Math.random()*texttype];
+
+        }
+    </script>
+</head>
+<body>
+    <button style="position: absolute; top: 0px; left: 0px;" id="move" onclick="moveButton()">
+        <p id="test">Click Me</p>
+    </button>
+    
+</body>
+</html>
