@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function draw()
+        {
+            var canvas = document.getElementById('canvas1');
+            var ctx = canvas.getContext('2d');
+            //main house
+            ctx.fillStyle = "#C4A484";
+            ctx.fillRect(12.5,30,175,70);
+
+            //roof
+            ctx.fillStyle="brown"
+            ctx.beginPath();
+            ctx.moveTo(12.5,30);
+            ctx.lineTo(185,30);
+            ctx.lineTo(99,0);
+            ctx.closePath();
+            ctx.fill();
+
+            //window
+            ctx.fillStyle="brown";
+            ctx.fillRect(25,40,35,50);
+            ctx.fillStyle="skyblue";
+            ctx.fillRect(27,42,30,45);
+          
+
+            //door
+            ctx.fillStyle = "#5C4033";
+            ctx.fillRect(80,53,30,47)
+
+            //knob
+            ctx.beginPath();
+            ctx.fillStyle = "white";
+            ctx.arc(105,75,3,0,2*Math.PI);
+            ctx.fill();
+            ctx.closePath();
+
+
+
+        }
+    </script>
+</head>
+<body onload="draw()">
+    <canvas id="canvas1"></canvas> 
+    
+</body>
+</html>
