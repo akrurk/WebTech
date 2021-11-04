@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var CurrDate = new Date();
+
+        function age()
+    {
+        var d1 = document.getElementById('date').value;
+        var m1 = document.getElementById('month').value - 1;
+        var y1 = document.getElementById('year').value;
+
+        var birth = new Date(y1,m1,d1);
+        var dif = CurrDate - birth
+
+        dif = dif/(60*60*24*1000*365.25)
+
+        dif= +Math.floor(dif);
+
+        document.getElementById("age").innerHTML = dif
+
+
+
+    }
+    </script>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <p>Day</p><input type="text" name="date" id="date">
+    <p>Month</p><input type="text" name="month" id="month">
+    <p>Year</p><input type="text" name="year" id="year">
+    <p><button type="button" name="submit" value="Submit" onclick="age()">Calculate</button></p>
+    <p>Calculated Age:<span id="age"></span></p>
+
+    
+</body>
+</html>
