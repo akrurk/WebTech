@@ -17,15 +17,15 @@
                 new Date(today.getFullYear()+1, today.getMonth(), today.getDate())
             
             //Create a new cookie that exprires a year from now
-            document.cookie = lastVisit + "=" + cValue + 
+            document.cookie = cName + "=" + cValue + 
             ";expires="+ expireDate.toGMTString() 
             }
 
 
-            function readCookie(lastVisit)
+            function readCookie(cName)
             {
             c=document.cookie  //Gets all cookies in the document
-            var s=c.indexOf(lastVisit) //s is the index of the start of the desired cookie
+            var s=c.indexOf(cName) //s is the index of the start of the desired cookie
             if (s==-1) return null;
             var cs=c.substring(s) //Cut the cookie string at the start of the desired cookie
             var e=cs.indexOf(";") //e is the index of the end of the desired cookie
@@ -36,6 +36,13 @@
             //Find and return the value of the desired cookie
             cookieParts=cs.split("=")
             return cookieParts[1]
+            }
+
+            function test()
+            {
+            if (s=="") return null;
+            document.getElementById("date").innerHTML = first visit 
+                
             }
     </script>
 </head>
