@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Deleted Pg Recent News. It was in proposal however removed it. Even after removing I have 10 pages (excluding the mandatroy ones) which fullfil the project requirment-->
-    <!--Colspan used in Line 82 of BKC_Rec.html (Recomended Project in BKC Pg)-->
-    <!--List with sublist on line 89 of resources.html (Resources Pg)-->
-    <!--Hospot on explore.html (Explore Pg) line 115 -->
-    <!--Line 251 Video BKC.html (BKC page)-->
-    <!--Music on index.html line 130 -->
-
-
-    <!--JS #1 On Home Page When Mouse Over Live Mumbai Logo...The colour of text will change to red-->
-    <!--JS #2 On Homepage the "Live Bombay" text Changes to "Live Mumbai" when button clicked-->
-    <!--JS #3 On Contact Us Page The Form Does not Validate if the text is not filled and Provides Alerts if there are incomplete information-->
-    <!--JS #4 On Homepage when hover ober Mumbai picture the picture will change-->
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,21 +8,65 @@
     <meta name="keywords" content="Live Bombay, About Bombay, Mapping Bombay, Bombay Ciy, Financial Capital, Live Mumbai, Mumbai City, Real Estate, City, India,"/>
     <meta name="author" content="Akrur Kamal Khetan"/>
     <title>Live Bombay</title>
-    <link rel="stylesheet" href="style_sheet.css" type="text/css" />
     <style>
 
+    /*Navigation Bar Styling*/
+    .Nav_Bar {top: 0px; text-align: center; width: 100%;}
+    .Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color: rgb(50, 50, 50); border-radius: 5px; text-align: center; display: inline-block;}
+    .Nav_Bar li {float: left;}
+    .Nav_Bar li a {display: inline-block; color: white; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+    .Nav_Bar a.Active {background-color:rgb(50, 50, 50);}
+    .Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:grey;}
+    .Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: rgb(50, 50, 50); min-width: 100px; z-index: 1; }
+    .Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+    .Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
 
-        .button {background-color: lightsteelblue; border: none; color: white; padding: 16px 32px; text-align: center; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer;}
+/*Background*/
+body{background-color: grey;}
+
+/*Imported Font*/
+@font-face {
+        font-family: header;
+        src: url(header.ttf);}
+
+@font-face {
+    font-family: header2;
+    src: url(header3.ttf);
+}
+
+/*Hover Button*/
+.button {background-color: lightsteelblue; border: none; color: white; padding: 16px 32px; text-align: center; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer;}
 
   .button1 {
-  background-color: white; 
+  background-color: grey; 
   color: black; 
   border: 2px solid grey;
 }
 
 .button1:hover {
-  background-color:grey;
+  background-color:white;
   color: black;}
+
+/*Class & Ids*/
+.footer{font-size: 10pt;text-align: center;}
+header{font-family: header; text-align: center;font-size: 25pt;}
+h1{text-align: center; font-family: header3;}
+h2{text-align: center; font-family: header2; font-size: 23pt;}
+.info{padding-left: 50px; padding-right: 50px; text-align: justify;font-size: 12pt;}
+.infoblock{background-image: linear-gradient(180deg,white, grey); margin-right: 50px; margin-left: 50px;border-radius: 5%;border: grey solid 4px;}
+
+
+
+    .button {background-color: lightsteelblue; border: none; color: white; padding: 16px 32px; text-align: center; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer;}
+
+    .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid grey;}
+
+    .button1:hover {
+    background-color:grey;
+    color: black;}
 
     </style>
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -80,7 +111,7 @@
 
     </script>
 </head>
-    <body style="background-color: grey;">
+    <body>
         <div class="Nav_Bar" >
             <ul style="font-size: 15pt;">
                 <li>
