@@ -12,10 +12,23 @@
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script>
 
+
+
        $(function(){
             $("#b1").click(function(){
             $("#append").append("akhetan2@babson.edu")})
         });
+
+        var font = 13
+        function ChgOne()
+        {
+            font = font + 1;        
+            document.getElementById("one").style.fontSize= font +"pt";
+            if (font<=20)
+            {
+            setTimeout("ChgOne()",100) 
+            }
+        }
 
     </script>
 </head>
@@ -72,11 +85,11 @@
     <br>
     <header><a href="index.html"><img style="width: 275px;" src="Picture1.png" alt="Mumbai Skyline Animated"></a></header>
     <header>Live Bombay</header>
-<br>
-    <div class="infoblock">
+    <p style="text-align: center;">To increase the font size to 20pt, please click on any text in box below.</p>
+    <div class="infoblock" onclick="ChgOne()">
         <h2 style="font-size: 14pt; text-align: center;">About Me</h2>
         <p style="float: right;padding-right: 50px; padding-left: 30px;"><img style="width: 200px;" src="ak.JPG" alt="Akrur's Photo"></p>
-        <div style="margin-left: 50px; font-size: 13pt; text-align: justify; margin-right: 30px;">
+        <div style="margin-left: 50px; font-size: 13pt; text-align: justify; margin-right: 30px;" id="one">
         <p>Hello, I’m Akrur Kamal Khetan. Currently, I’m a junior at Babson College and I’ve made this website as part of my Web Technologies course at Babson. I’m from Mumbai, India.</p>
 
         <p>As you can tell, this website is about different localities within Mumbai, and some of the best real estate projects in the city. I have had extensive experience in the real estate world, as my family business involves development of both commercial and residential properties throughout the city.</p>
@@ -88,11 +101,12 @@
         <p>I am also a Mumbai lover, as I was born and brought up there. I’ve lived here all my life. Through this website, I have tried to show you the city from my eyes, and I hope you like it!</p>
         
         <p id="append" style="font-weight: 800;">Contact Email: </p>
-        <p style="text-align: center;"><button id="b1">Click Here To Reveal Email</button></p>
+
     </div>
 
 
     </div>
+    <p style="text-align: center;"><button id="b1">Click Here To Reveal Email</button></p>
     
     <footer>
         <p class="footer">I have abided by the Babson Code of Ethics in this work and pledge to be better than that which would compromise my integrity</p>

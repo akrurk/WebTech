@@ -15,9 +15,22 @@
   margin-right: auto;
 }
     </style>
+
+    <script>
+        var mumbainames = new Array("Bombay", "Mumbai", "City Of Dreams", "Bay", "Island City", "Finance", "Bollywood")
+        function ChgOne()
+        {
+            var a2 = Math.floor(Math.random()*(mumbainames.length))
+            var a1 = document.getElementById("one")
+            a1.innerHTML=mumbainames[a2]
+            setTimeout("ChgOne()", 1000)
+            
+        }
+    </script>
+
     <title>Explore</title>
 </head>
-<body>
+<body onload="ChgOne()">
     <div class="Nav_Bar" >
         <ul style="font-size: 15pt;">
             <li>
@@ -69,7 +82,7 @@
     </div>
     <br>
     <header><a href="index.html"><img style="width: 275px;" src="Picture1.png" alt="Mumbai Skyline Animated"></a></header>
-    <header>Live Bombay</header>
+    <header>Live <Span id="one">Bombay</Span></header>
 
 
     <h1 style="font-family: header2;">Explore Using</h1>
