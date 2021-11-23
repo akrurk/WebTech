@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title> 
+  <!--  Bootstrap2.htm -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script>
+      $(function(){
+      $("#test1").text("This is paragraph #1.");
+      $("#test2").click(function(){
+        $(this).attr("src", "https://images.pexels.com/photos/8658962/pexels-photo-8658962.jpeg?cs=srgb&dl=pexels-tatyana-8658962.jpg&fm=jpg")
+      })
+
+    });
+  </script>
+  <style>
+   
+    p {text-align: center;}
+    .container-fluid {background-color: lightblue;}
+    .navbar-header {background-color: lightblue;}
+  </style>
+</head>
+<body id="bod">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search Engines 
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+      <li><a href="https://google.com">Google</a></li>
+      <li><a href="https://bing.com">Bing</a></li>
+      <li><a href="https://duckduckgo.com">DuckDuckGo</a></li>
+      </ul>
+      </li>
+    <li><a href="https://www.amazon.com/">Amazon</a></li>
+    <li><a href="https://www.target.com/">Target</a></li>
+    </ul>
+    </div>
+    </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>My first Bootstrap website!</h1>
+      <p>This is going to be a subtitle </p>
+    </div>
+  </div>
+    
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          
+          <p id="test1">This is first paragragh.</p>
+          <p>This is second paragraph.</p>
+        </div>
+        <div class="col-sm-4">
+          
+          <p>This is third paragraph.</p>
+          <p>This is fourth paragraph.</p>
+  
+        </div>
+        <div class="col-sm-4">
+  
+          <p>This is fifth paragraph.</p>
+  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4" style="background-color: pink;">
+          <p>this is another text box</p>
+        </div>
+        <div class="col-sm-4" style="background-color: red;">
+          <p> <img id="test2" src="https://images.pexels.com/photos/7494243/pexels-photo-7494243.jpeg?cs=srgb&dl=pexels-leon-huang-7494243.jpg&fm=jpg" style="width: 300px;"></p>
+        </div>
+        <div class="col-sm-4" style="background-color: green;">
+          <p>this is some more text</p>
+        </div>
+  
+      </div>
+      <div class="row">
+        <div class="col-sm-6" style="background-color: grey ;">
+          <p><img class="abc" src="https://images.pexels.com/photos/8658962/pexels-photo-8658962.jpeg?cs=srgb&dl=pexels-tatyana-8658962.jpg&fm=jpg" style="width: 300px;"></p>
+        </div>
+        <div class="col-sm-6" style="background-color: blue;">
+          <p><img src="https://images.pexels.com/photos/9848220/pexels-photo-9848220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 300px;"></p>
+          
+        </div>
+      </div>
+  
+    </div>
+
+  
+
+</body>
+</html>
