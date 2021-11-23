@@ -14,6 +14,11 @@
     <!--JS #4 On Homepage (index.htm) when hover ober Mumbai picture the picture will change-->
     <!--JS #5 On About Us (about.htm) page...when clicked on text the animation increases the text size by 1pt every 100ms till it reaches 25pt-->
     <!--JS #6 On Explore (explore.htm) page the header "Live Bombay" keeps on changing as soon as the page is loaded. It chooses the words randomly from an array of 7 options-->
+
+    <!--JQ #1 On Homepage when you scrolldown to "Mapping Mumbai" section the picture chnages size when clicked on the button with the help of Jquery-->
+    <!--JQ #2 On BKC Pg (BKC.htm) in the background section there is a button present. When clicked the image next to it will hide with the help of JQuery-->
+    <!--JQ #3 On About Me pg (about.html) a button at the bottom of the pg is present. When clicked it appends texts and shows my email when clicked-->
+    <!--JQ #4 On Explore pg (Explore.htm) at bottom of a page a button is present. When clciked using Jquery it reveals the code of how the hotspots work-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +52,8 @@
          document.location="mobile.htm"
         }
 // ]]>
+
+
         
         function ChgOne()
         {
@@ -80,6 +87,9 @@
         $(function(){
             $("#test1").click(function(){
             $("#test2").delay("fast").animate({width:'500px'})})
+
+            $("#test3").click(function(){
+            alert("HTML: " + $("#code").html())});
         });
 
 

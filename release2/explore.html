@@ -15,7 +15,7 @@
   margin-right: auto;
 }
     </style>
-
+    <script src="https://code.jquery.com/jquery.min.js"></script>
     <script>
         var mumbainames = new Array("Bombay", "Mumbai", "City Of Dreams", "Bay", "Island City", "Finance", "Bollywood")
         function ChgOne()
@@ -26,6 +26,11 @@
             setTimeout("ChgOne()", 1000)
             
         }
+
+        $(function(){
+            $("#test3").click(function(){
+            alert("HTML: " + $("#anchor2").html())});
+        });
     </script>
 
     <title>Explore</title>
@@ -132,10 +137,12 @@
         <area  alt="Worli" title="Worli" href="Worli.htm" coords="81,403,39" shape="circle">
         <area  alt="BKC" title="BKC" href="BKC.htm" coords="141,339,28" shape="circle">
     </map>
+    <p style="text-align: center;font-size: 12pt;">Learn How To Code Hotspots Like In Image Above?</p>
+    <p style="text-align: center;font-size: 12pt;"><button id="test3">Click Here</button></p>
 
 
 </div>  
-<br>
+
 <footer>
     <p class="footer">I have abided by the Babson Code of Ethics in this work and pledge to be better than that which would compromise my integrity</p>
     <p class="footer"><b>Website By Akrur Kamal Khetan</b></p>
